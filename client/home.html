@@ -10,6 +10,7 @@
 <template name='gameList'>
 <div class='column'>
 <h1> Games </h1>
+<h2> Games you are playing right now for cookies and booty! </h2>
 <ul>
     {{#each games}}
         {{> gameItem}}
@@ -43,7 +44,7 @@
 <template name='userList'>
     <div class='column'>
         <h1> Users </h1>
-        <p> Choose anothe user to start a game with them : </p>
+        <h2> Simply click on the available users to start a game with them</h2> 
         <ul>
             {{#each users}}
                 {{> userItem}} 
