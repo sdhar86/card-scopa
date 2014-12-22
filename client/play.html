@@ -1,8 +1,8 @@
 <template name='play'>
     {{> signupLogin}}
     {{#if currentUser}}
-        {{>rules}}
         {{> status}}
+        {{>rules}}
         {{#unless inProgress}}
             {{> score}}
         {{/unless}}
@@ -15,7 +15,7 @@
 </template>
 
 <template name='status'>
-<p> <a href='/'> &larr; Home </a> </p>
+<h2> <a href='/'> &larr; Home </a> </h2>
 <h2> Game between you and {{otherPlayer.username}} {{#if inProgress}} {{#if yourTurn}} (Your Turn) {{/if}} {{/if}}</h2>
 </template>
 
